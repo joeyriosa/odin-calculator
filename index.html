@@ -9,12 +9,12 @@
 <body>
     <div class="container">
         <div class="display-container">
-            <div id="formula">1+1</div>
-            <div id="display">ERR</div>
+            <div id="formula" class="display-class"></div>
+            <div id="display" class="display-class">0</div>
         </div>
 
         <div class="keypad">
-            <button class="wide">clear</button>
+            <button id="clear-button" class="wide">clear</button>
             <button class="wide">delete</button>
 
             <button class="btn-number">7</button>
@@ -34,7 +34,7 @@
 
             <button class="btn-number">0</button>
             <button>.</button>
-            <button>=</button>
+            <button id="equal-operator">=</button>
             <button class="btn-operator">+</button>
         </div>
     </div>
