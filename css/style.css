@@ -11,35 +11,37 @@ body {
 }
 
 .container {
-    border: 1px solid blue;
+    border: 1px solid #40516b;
+    background-color: #40516b;
     padding: 25px;
+    border-radius: 15px;
 }
 
 .display-container {
-    width: 230px;
+    width: 228px;
     display: flex;
     flex-direction: column;
-    /* align-items: flex-end; */
-    /* justify-content: flex-end; */
     border: 1px solid #ccc;
     background-color: #f4f4f4;
     border-radius: 4px;
     text-align: right;
-    height: 70px;
+    min-height: 70px;
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .keypad {
     width: 230px;
-    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 button {
     width: 50px;
     height: 50px;
     font-size: 20px;
-    margin: 2px;
+    margin: 5px 0px 5px 0px;
     cursor: pointer;
     background-color: #6fa3ef; /* Light blue base color */
     color: #fff; /* White text color */
@@ -56,6 +58,10 @@ button:active {
     transform: scale(0.95);
 }
 
+button:focus {
+    outline: none;
+}
+
 .wide {
     width: 108px;
 }
@@ -64,10 +70,15 @@ button:active {
     font-size: 1.5em;
     font-weight: bold;
     margin: 5px;
+    height: auto;
 }
 
 #formula {
     font-size: 1em;
     margin: 5px;
     flex: 1 1 auto;
+}
+
+#display {
+    word-wrap: break-word;
 }
